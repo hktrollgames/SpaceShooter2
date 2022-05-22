@@ -15,7 +15,9 @@ public class Missle : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             print("파괴 " + collision.transform.name);
-            Destroy(collision.gameObject);
+            Destroy(collision.gameObject); // 부딛힌 대상 파괴
+
+            Destroy(gameObject); // 미사일이 붙어 있는 게임오브젝트 파괴
         }
     }
 }
