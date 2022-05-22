@@ -19,6 +19,6 @@ public class Move : MonoBehaviour
     public Vector3 translation;
     private void Update()
     {
-        transform.Translate(translation);
+        transform.Translate(translation * Time.deltaTime);
     }
 }
