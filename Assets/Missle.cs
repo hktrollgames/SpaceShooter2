@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class Missle : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.CompareTag("Enemy"))
+        if (collider.CompareTag("Enemy"))
         {
-            print("파괴 " + collision.transform.name);
-            //Destroy(collision.gameObject); // 부딛힌 대상 파괴
-
-            collision.gameObject.GetComponent<DestroyEffect>().OnDestroyEffect();
+            print("파괴 " + collider.transform.name);
+            collider.GetComponent<DestroyEffect>().OnDestroyEffect();
 
 
-            Destroy(collision.gameObject);
+            Destroy(collider.gameObject);
             Destroy(gameObject); // 미사일이 붙어 있는 게임오브젝트 파괴
         }
     }
