@@ -7,13 +7,11 @@ public class ScoreText : MonoBehaviour
 {
     public int score;
 
-    
     Text scoreText = null;
     private void Awake()
     {
         scoreText = GetComponent<Text>();
     }
-
     public void AddScore(int addScore)
     {
         //score = score + addScore;
