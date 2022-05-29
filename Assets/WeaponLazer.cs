@@ -5,12 +5,20 @@ using UnityEngine;
 public class WeaponLazer : MonoBehaviour
 {
     public GameObject missile;
-    void Update()
+
+
+    private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            GameObject newMissile = Instantiate(missile);
-            newMissile.transform.position = transform.position;
+            FireMissile();
         }
     }
+
+    public void FireMissile()
+    {
+        GameObject newMissile = Instantiate(missile);
+        newMissile.transform.position = transform.position;
+    }
+
 }
