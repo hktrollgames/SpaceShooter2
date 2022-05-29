@@ -5,9 +5,10 @@ using UnityEngine;
 public class DestroyEffect : MonoBehaviour
 {
     public GameObject effect;
-    private void OnDestroy()
+    public void OnDestroyEffect()
     {
-        effect.transform.position = transform.position; // 비행기 위치를 이펙트 위치에 넣는다.
-        Instantiate(effect);
+        // 비행기 위치를 이펙트 위치에 넣는다.
+        var newEffect = Instantiate(effect);
+        newEffect.transform.position = transform.position;
     }
 }

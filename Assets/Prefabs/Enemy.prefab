@@ -128,4 +128,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40444b51abae6fa4dbf4395983f107e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effect: {fileID: 1280240331523082, guid: 45ae5851ef2832044bba82850372d67b, type: 3}
+  effect: {fileID: 1981774452263784, guid: 69bc9de1566254e4db3ef4d734a7fbcd, type: 3}
