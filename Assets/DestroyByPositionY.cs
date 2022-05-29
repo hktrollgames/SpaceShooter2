@@ -13,8 +13,7 @@ public class DestroyByPositionY : MonoBehaviour
 
         if (y > maxY)
             Destroy(gameObject);
-
-        if (y < minY)
+        else if (y < minY)
             Destroy(gameObject);
     }
 }

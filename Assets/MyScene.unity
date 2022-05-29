@@ -389,6 +389,8 @@ MonoBehaviour:
   - {fileID: 947077235}
   interval: 0.5
   enemy: {fileID: 8036003155535199949, guid: a410b6ffb4938154fa887b3b7cf4afa3, type: 3}
+  boss: {fileID: 8036003155535199949, guid: 71b9c9f61fe907a49960b4512b822a23, type: 3}
+  smallEnemyCount: 10
 --- !u!4 &438250167
 Transform:
   m_ObjectHideFlags: 0
